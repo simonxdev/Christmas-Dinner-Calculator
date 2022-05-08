@@ -1,0 +1,141 @@
+:root {
+  --wine-red: #C7375F;
+  --bright-red: #D42D2F;
+  --dark-green: #344D2F;
+  --light-green: #77A047;
+  --gold: #FAC57D;
+  --snow: #F0F4F7;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    color: var(--snow);
+    background-color: var(--wine-red);
+    background-image: url("https://images.unsplash.com/photo-1608028572605-c633bbb30aa5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2274&q=80");
+    background-size:cover;
+}
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    padding:30px;
+    background: rgb(255,0,181);
+    background: radial-gradient(circle, rgba(255,0,181,0.46292037322741597) 0%, rgba(254,20,20,0.5693629502582283) 100%);
+    border: 1px solid white;
+    text-shadow:1px -1px 2px #015200;
+    -moz-box-shadow: -3px -2px 75px #ffffff;
+-webkit-box-shadow: -3px -2px 75px #ffffff;
+box-shadow: -3px -2px 75px #ffffff;
+}
+
+h1 { 
+    margin: 0;
+    text-align: center;
+    text-shadow:1px -1px 11px #015200;
+
+}
+
+form input,
+form button,
+.result {
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    border-radius: 5px;
+    border: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    height: 12em;
+    justify-content: space-around;
+}
+
+
+form * {
+   padding: .5em;
+   font-size: 1.3rem
+}
+
+label {
+    padding: 0;
+}
+
+input { 
+    background: var(--snow);
+    color: var(--dark-green);
+}
+
+.veggie {
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+}
+
+.veggie > input {
+    margin-right: 10px;
+}
+
+.result {
+    color: var(--wine-red);
+    min-width: 100%;
+    max-width: 5ch;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background: var(--snow);
+    padding: 1em;
+    font-size: 1.5rem;
+    
+    
+}
+
+.result span {
+    color: var(--dark-green);
+    font-weight: 900
+}
+
+button {
+    color: white;
+    background: var(--dark-green);
+    margin-bottom: 20px;
+    -moz-box-shadow: -3px -2px 75px #ffffff;
+    -webkit-box-shadow: -3px -2px 75px #ffffff;
+    box-shadow: -3px -2px 75px #ffffff;
+}
+
+button:hover,
+button:focus {
+    transform: scale(1.05);
+    cursor: pointer;  
+}
+
+#vegan-input {
+    margin-left:40px;
+}
+
+.animate {
+-webkit-animation: cssAnimation 2.314s 1 ease;
+-moz-animation: cssAnimation 2.314s 1 ease;
+-o-animation: cssAnimation 2.314s 1 ease;
+}
+@-webkit-keyframes cssAnimation {
+from { -webkit-transform: rotate(0deg) scale(0.1) skew(1deg) translate(0px); }
+to { -webkit-transform: rotate(0deg) scale(1.009) skew(1deg) translate(0px); }
+}
+@-moz-keyframes cssAnimation {
+from { -moz-transform: rotate(0deg) scale(0.1) skew(1deg) translate(0px); }
+to { -moz-transform: rotate(0deg) scale(1.009) skew(1deg) translate(0px); }
+}
+@-o-keyframes cssAnimation {
+from { -o-transform: rotate(0deg) scale(0.1) skew(1deg) translate(0px); }
+to { -o-transform: rotate(0deg) scale(1.009) skew(1deg) translate(0px); }
+}
